@@ -1,7 +1,14 @@
 import React from "react";
+import YoutubeIntegration from "./components/YouTube";
+// import "./App.css";
+// import YouTubePlayer from "./components/YouTube";
 
-const App = () => {
-  return <div>Hey hack heros</div>;
-};
+function App() {
+  return (
+    <div className="App">
+      <YoutubeIntegration />
+    </div>
+  );
+}
 
 export default App;
