@@ -20,7 +20,7 @@ Welcome to FocusIt, a project brought to you by the team Hack Heroes for the Sca
 Ready to boost your productivity and work like Elon Musk? Follow these steps to get started with FocusIt:
 
 1. Clone this repository to your local machine. ``` git clone https://github.com/ShivanshAr97/Hack-Heros.git ```
-2. Install the required dependencies.<br/> For Website <br/> ```cd Website/client```<br/>  ```npm i``` <br/> ```npm run dev``` <br/> <br/> For Extension <br/> ```cd extension``` go to ```chrome://extensions``` and load the extension
+2. Install the required dependencies.<br/> For Website <br/> ```cd Website/client  npm i npm run dev``` <br/> <br/> For Extension ```cd extension``` go to ```chrome://extensions``` and load the extension
 3. Create an account or log in for a personalized experience.
 4. Set your daily focus and Pomodoro timer preferences.
 5. Add tasks to your Todo list and prioritize them.
@@ -57,3 +57,33 @@ We welcome contributions to make FocusIt even better! Feel free to clone and for
 ### Feedback
 
 We're continually improving FocusIt, and your feedback is essential in this process. If you encounter any issues, have suggestions, or want to report a bug, please open an issue on our GitHub repository.
+
+### Screenshots
+#### Chrome Extension
+<img width="682" alt="SS1" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/a0657e00-76d1-4df6-89d4-a1fd520b28c8">
+<br/>
+Find the <b>FocusIt</b> extension
+<br/>
+<br/>
+<img width="324" alt="SS2" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/7e9fd9bf-a9b7-473a-b6fa-502bf8ebf236">
+<br/>
+<b>The Landing interface</b>
+<br/>
+<br/>
+<img width="318" alt="SS3" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/e2b68e56-90ad-4df2-acef-ac6790c4583a">
+<br/>
+<b>Pomodoro with short and long break functionality</b>
+<br/>
+<br/>
+<img width="318" alt="SS4" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/dbcdaaeb-3e3e-4378-a8e9-f388d4c002e0">
+<br/>
+<b>Motivational bytes</b>
+<br/>
+<br/>
+<img width="958" alt="SS5" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/23e985bf-6672-40bf-bd9d-5d5d8dc4fe27">
+<br/>
+<b>Adblocking in action, first we are able to go to https://www.primevideo.com easily but once the site is added to the extension, the site becomes unreachable.</b>
+<br/>
+<img width="960" alt="SS6" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/cf2d16d4-f521-418d-a49d-d0e2da925114">
+<br/>
+
