@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import YouTube from "react-youtube";
 import axios from "axios";
 import ReactPlayer from "react-player";
 
@@ -78,8 +77,8 @@ const YoutubeIntegration = () => {
       <div className="mt-8">
         {videoId && (
           <div>
-            <YouTube videoId={videoId} />
-            {/* <ReactPlayer url={audioUrl} controls playing={isPlaying} /> */}
+            {/* <YouTube videoId={videoId} /> */}
+            <ReactPlayer url={audioUrl} controls playing={isPlaying} />
           </div>
         )}
       </div>
