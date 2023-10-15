@@ -26,8 +26,8 @@ const PomodoroTimer = () => {
   }, [time]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="timer-container">
+    <div className=" min-h-[90vh] flex items-center justify-center bg-gray-100">
+      <div className="timer-container border-solid border-2 border-gray-800 rounded p-2 flex-col items-center ">
         <h1 className="text-3xl font-bold mb-4">Pomodoro Timer</h1>
         <div className="timer bg-blue">{displayTime()}</div>
         <div className="mb-4">

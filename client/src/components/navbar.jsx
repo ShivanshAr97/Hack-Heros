@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PomodoroTimer from "./pomodoro";
+import YoutubeIntegration from "./YouTube";
 
 const Navbar = () => {
   const [selectedElement, setSelectedElement] = useState("Daily Focus");
@@ -77,7 +78,7 @@ const Navbar = () => {
       <div className="mt-4 px-6">
         {selectedElement === "Daily Focus" && <h1>Daily Focus Content</h1>}
         {selectedElement === "Pomodoro" && <PomodoroTimer />}
-        {selectedElement === "Music" && <h1>Music Content</h1>}
+        {selectedElement === "Music" && <YoutubeIntegration />}
         {selectedElement === "Placeholder 1" && <h1>Placeholder 1 Content</h1>}
         {selectedElement === "Placeholder 2" && <h1>Placeholder 2 Content</h1>}
       </div>
