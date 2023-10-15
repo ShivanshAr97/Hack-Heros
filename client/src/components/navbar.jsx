@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PomodoroTimer from "./pomodoro";
 import YoutubeIntegration from "./YouTube";
 import DailyFocusTodoList from "./Todo";
+import DailyMotivationalQuote from "./quotes";
 
 const Navbar = () => {
   const [selectedElement, setSelectedElement] = useState("Daily Focus");
@@ -52,26 +53,26 @@ const Navbar = () => {
           </li>
           <li>
             <button
-              onClick={() => handleElementClick("Placeholder 1")}
+              onClick={() => handleElementClick("Daily Quotes")}
               className={`${
-                selectedElement === "Placeholder 1"
+                selectedElement === "Daily Quotes"
                   ? "text-white font-bold"
                   : "text-gray-300"
               } hover:text-white px-3 py-2`}
             >
-              Placeholder 1
+              Daily Quotes
             </button>
           </li>
           <li>
             <button
-              onClick={() => handleElementClick("Placeholder 2")}
+              onClick={() => handleElementClick("Placeholder")}
               className={`${
-                selectedElement === "Placeholder 2"
+                selectedElement === "Placeholder"
                   ? "text-white font-bold"
                   : "text-gray-300"
               } hover:text-white px-3 py-2`}
             >
-              Placeholder 2
+              Placeholder
             </button>
           </li>
         </ul>
@@ -80,7 +81,7 @@ const Navbar = () => {
         {selectedElement === "Daily Focus" && <DailyFocusTodoList />}
         {selectedElement === "Pomodoro" && <PomodoroTimer />}
         {selectedElement === "Music" && <YoutubeIntegration />}
-        {selectedElement === "Placeholder 1" && <h1>Placeholder 1 Content</h1>}
+        {selectedElement === "Daily Quotes" && <DailyMotivationalQuote />}
         {selectedElement === "Placeholder 2" && <h1>Placeholder 2 Content</h1>}
       </div>
     </div>
