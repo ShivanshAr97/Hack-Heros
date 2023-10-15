@@ -10,6 +10,15 @@ const PomodoroTimer = () => {
     setTimer(setInterval(() => setTime((prevTime) => prevTime - 1), 1000));
   };
 
+  const pauseTimer = () => {
+    clearInterval(timer);
+  };
+
+  const resetTimer = () => {
+    clearInterval(timer);
+    setTime(1500);
+  };
+
   const displayTime = () => {
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
@@ -26,25 +35,27 @@ const PomodoroTimer = () => {
   }, [time]);
 
   return (
-    <div className=" min-h-[90vh] flex items-center justify-center bg-gray-100">
-      <div className="timer-container border-solid border-2 border-gray-800 rounded p-2 flex-col items-center ">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="timer-container border-2 border-gray-800 rounded p-4 flex flex-col items-center">
         <h1 className="text-3xl font-bold mb-4">Pomodoro Timer</h1>
-        <div className="timer bg-blue">{displayTime()}</div>
-        <div className="mb-4">
+        <div className="timer bg-blue-500 text-white font-bold text-4xl p-4 rounded mb-4">
+          {displayTime()}
+        </div>
+        <div className="mb-4 space-x-4">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold m-4 py-2 px-4 rounded"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={() => startTimer(1500)}
           >
             Work (25 min)
           </button>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold m-4 py-2 px-4 rounded"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={() => startTimer(300)}
           >
             Short Break (5 min)
           </button>
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold m-4 py-2 px-4 rounded"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={() => startTimer(900)}
           >
             Long Break (15 min)
@@ -57,10 +68,10 @@ const PomodoroTimer = () => {
             min="1"
             max="60"
             defaultValue="25"
-            className="input-field"
+            className="border-2 border-gray-800 rounded p-2 mr-2"
           />
           <button
-            className="btn"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={() =>
               startTimer(document.getElementById("workTime").value * 60)
             }
@@ -75,15 +86,29 @@ const PomodoroTimer = () => {
             min="1"
             max="60"
             defaultValue="5"
-            className="input-field"
+            className="border-2 border-gray-800 rounded p-2 mr-2"
           />
           <button
-            className="btn"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             onClick={() =>
               startTimer(document.getElementById("breakTime").value * 60)
             }
           >
             Start Break
+          </button>
+        </div>
+        <div className="mt-4 space-x-4">
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={pauseTimer}
+          >
+            Pause
+          </button>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onClick={resetTimer}
+          >
+            Reset
           </button>
         </div>
       </div>
