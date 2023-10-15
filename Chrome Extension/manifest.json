@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Ravi Bhai",
+    "version": "1.0",
+    "description": "Get hourly motivational quotes.",
+    "permissions": [
+      "alarms",
+      "tabs",
+      "declarativeNetRequest",
+      "declarativeNetRequestWithHostAccess",
+      "storage",
+      "activeTab"
+    ],
+    "icons": {
+      "48": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png"
+      }
+    }
+  }
+  

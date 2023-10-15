@@ -1,0 +1,26 @@
+body {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .quote-container {
+    padding: 20px;
+  }
+  
+  #quote-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #get-quote {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #get-quote:hover {
+    background-color: #00569b;
+  }
+  
