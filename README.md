@@ -86,4 +86,27 @@ Find the <b>FocusIt</b> extension
 <br/>
 <img width="960" alt="SS6" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/cf2d16d4-f521-418d-a49d-d0e2da925114">
 <br/>
+<br/>
+
+#### Website
+<img width="960" alt="SS7" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/9fa345c5-a077-486d-8c75-71b419770c04">
+<br/>
+<b>Landing Page of our website, user logged in using firebase, data stored in the firestore data base</b>
+<br/>
+<br/>
+<img width="493" alt="SS8" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/3d0697fa-34f6-46f9-b391-4806cf57def0">
+<br/>
+<b>The todo list, having feature to edit or delete a todo or clear the whole list.</b>
+<br/>
+<br/>
+<img width="316" alt="SS9" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/b34cb3df-cdec-4d8f-a56a-18f15d8f46ea">
+<br/>
+<b>Notifications recieved of the motivational quotes</b>
+<br/>
+<br/>
+<img width="923" alt="SS10" src="https://github.com/ShivanshAr97/Hack-Heros/assets/96040322/d34edabf-d678-42c1-a3fb-e2db52cfee8e">
+<br/>
+<b>User can search the YouTube Music with the input box given</b>
+<br/>
+<br/>
 
