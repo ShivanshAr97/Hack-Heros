@@ -12,7 +12,7 @@ const YoutubeIntegration = () => {
   const searchVideos = async (query) => {
     try {
       const response = await axios.get(
-        `https://www.googleapis.com/youtube/v3/search?q=${query}&part=snippet&key=YOUR_API_KEY`
+        `https://www.googleapis.com/youtube/v3/search?q=${query}&part=snippet&key=AIzaSyA92wEsPxfWT6gQOVkbtH4F-Q9PoqbX_is`
       );
 
       setVideoList(response.data.items);
